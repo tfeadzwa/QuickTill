@@ -1,4 +1,4 @@
-# **Point of Sale (POS) System**
+# **QuickTill Point of Sale (POS) System**
 
 Welcome to the Point of Sale (POS) system project. This repository contains the source code for a modern POS solution built with a **Flutter mobile frontend** and a **Python FastAPI backend**. The system is designed to be fast, scalable, and easy to use.
 
@@ -45,46 +45,47 @@ Welcome to the Point of Sale (POS) system project. This repository contains the 
 
 ### **Backend Setup**
 
-1.  **Clone the repository**:
-    ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    cd your-repo-name/backend
-    ```
-2.  **Install dependencies**:
-    ```bash
-    poetry install
-    ```
-3.  **Configure environment variables**:
-    Create a `.env` file in the `backend` directory with your database and JWT secret configurations.
-    ```
-    DATABASE_URL="postgresql://user:password@host:port/dbname"
-    SECRET_KEY="your-jwt-secret-key"
-    ```
-4.  **Run migrations**:
-    ```bash
-    # Command to apply database migrations (e.g., using Alembic)
-    alembic upgrade head
-    ```
-5.  **Start the server**:
-    ```bash
-    poetry run uvicorn main:app --reload
-    ```
-    The API will be available at `http://127.0.0.1:8000`. You can access the auto-generated API documentation at `http://127.0.0.1:8000/docs`.
+1. **Clone the repository**:
+   ```bash
+   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+   cd your-repo-name/backend
+   ```
+2. **Install dependencies**:
+   ```bash
+   poetry install
+   ```
+3. **Configure environment variables**:
+   Create a `.env` file in the `backend` directory with your database and JWT secret configurations.
+   ```
+   DATABASE_URL="postgresql://user:password@host:port/dbname"
+   SECRET_KEY="your-jwt-secret-key"
+   ```
+4. **Run migrations**:
+   ```bash
+   # Command to apply database migrations (e.g., using Alembic)
+   alembic upgrade head
+   ```
+5. **Start the server**:
+   ```bash
+   poetry run uvicorn main:app --reload
+   ```
+
+   The API will be available at `http://127.0.0.1:8000`. You can access the auto-generated API documentation at `http://127.0.0.1:8000/docs`.
 
 ### **Frontend Setup**
 
-1.  **Navigate to the frontend directory**:
-    ```bash
-    cd ../frontend
-    ```
-2.  **Install dependencies**:
-    ```bash
-    flutter pub get
-    ```
-3.  **Run the app**:
-    ```bash
-    flutter run
-    ```
+1. **Navigate to the frontend directory**:
+   ```bash
+   cd ../frontend
+   ```
+2. **Install dependencies**:
+   ```bash
+   flutter pub get
+   ```
+3. **Run the app**:
+   ```bash
+   flutter run
+   ```
 
 ---
 
