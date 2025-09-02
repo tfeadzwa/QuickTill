@@ -12,9 +12,7 @@ from dotenv import load_dotenv
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from app.database import Base
 print("Base object id in env.py:", id(Base))
-from app.models.product import Product
-from app.models.sale import Sale
-from app.models.user import User
+
 print("Tables found:", list(Base.metadata.tables.keys()))
 import app.models  # noqa: F401; ensures all models are registered with Base
 
