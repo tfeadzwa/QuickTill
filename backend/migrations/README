@@ -1,1 +1,9 @@
 Generic single-database configuration.
+
+Applying migrations:
+
+backend> alembic revision --autogenerate -m "initial tables"
+alembic upgrade head
+
+#revert back
+alembic downgrade -1

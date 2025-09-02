@@ -12,3 +12,4 @@ engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
+print("Base object id in database.py:", id(Base))
