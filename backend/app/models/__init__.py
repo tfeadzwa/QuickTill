@@ -1,3 +1,3 @@
-from .products import Product
-from .users import User
-from .invoices import Invoice
+from .product import Product
+from .user import User
+from .sale import Sale
